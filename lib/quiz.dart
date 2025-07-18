@@ -12,7 +12,14 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  Widget activeScreen = const StartScreen();
+  Widget? activeScreen; 
+
+  @override
+  void initState() {
+    super.initState();
+    // passing the pointer of switchScreen as an argument to StartScreen
+    activeScreen = StartScreen(switchScreen); 
+  }
 
   void switchScreen() {
     setState(() {
