@@ -13,7 +13,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(context) {
     return const Center(
-      child: Text('humm?!'),
+      child: Text('Flutter Quiz!'),
     );
   }
 }
